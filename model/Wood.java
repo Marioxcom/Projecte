@@ -1,8 +1,12 @@
 package Projecte.model;
 
+import Projecte.utils.IdGenerate;
+
 import java.util.Random;
 
-public class Wood implements IdGenerate{
+import static Projecte.utils.IdGenerate.NUMBER;
+
+public class Wood implements IdGenerate {
     private String id;
     private String typeWood;
     private String shape;
@@ -135,9 +139,6 @@ public class Wood implements IdGenerate{
         System.out.println(generate);
     }
 
-    public void showDimensions() {
-        System.out.println(getHeight() + " mm, " + getWidth() + " mm, " + getThick() + " mm.");
-    }
 
     @Override
     public String toString() {

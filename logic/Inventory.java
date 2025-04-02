@@ -1,12 +1,14 @@
 package Projecte.logic;
 
+import Projecte.model.Wood;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class Inventory {
-    HashMap<String,Wood> inventory;
+    HashMap<String, Wood> inventory;
 
     public Inventory() {
         this.inventory = new HashMap<>();
@@ -25,7 +27,12 @@ public class Inventory {
     }
 
     public void delete(String id) {
-        inventory.remove(id);
+        if (inventory.containsKey(id)) {
+            System.out.println("The ID already exists");
+        } else {
+            inventory.remove(id);;
+        }
+
     }
 
     public void modify(String id, Wood wood) {

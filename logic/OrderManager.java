@@ -1,5 +1,9 @@
 package Projecte.logic;
 
+import Projecte.model.Client;
+import Projecte.model.Wood;
+import Projecte.price.DefaultPriceCalculator;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,7 +29,7 @@ public class OrderManager {
 
         inventory.delete(woodId);
 
-        PurchasingManager manager = new PurchasingManager(client);
+        PurchasingManager manager = new PurchasingManager(client, new DefaultPriceCalculator());
         activeOrders.put(woodId, manager);
 
         System.out.println("Order created:");

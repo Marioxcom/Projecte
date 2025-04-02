@@ -1,6 +1,11 @@
 package Projecte.logic;
 
-public class PurchasingManager implements SendOrders{
+import Projecte.model.Client;
+import Projecte.price.PriceStrategy;
+import Projecte.utils.SendOrders;
+import Projecte.utils.TimeOrder;
+
+public class PurchasingManager implements SendOrders {
     private final Client client;
     private final TimeOrder to;
     private final PriceStrategy priceStrategy;
