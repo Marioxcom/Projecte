@@ -21,7 +21,6 @@ public class UI {
             System.out.println("3. Exit");
             System.out.print("Option: ");
             String option = sc.nextLine();
-
             switch (option) {
                 case "1" -> inventoryMenu(sc, inventory);
                 case "2" -> orderMenu(sc, orderManager);

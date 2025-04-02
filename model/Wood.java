@@ -1,9 +1,7 @@
 package Projecte.model;
 
 import Projecte.utils.IdGenerate;
-
 import java.util.Random;
-
 import static Projecte.utils.IdGenerate.NUMBER;
 
 public class Wood implements IdGenerate {

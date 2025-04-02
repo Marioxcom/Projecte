@@ -1,5 +1,4 @@
 package Projecte.price;
-
 import Projecte.model.Client;
 import Projecte.model.Wood;
 

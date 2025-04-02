@@ -15,7 +15,6 @@ public class TimeOrder {
 
         return remaining > 0 ? remaining / 1000 : 0;
     }
-
     public boolean isExpired() {
         return remainingTime() <= 0;
     }
